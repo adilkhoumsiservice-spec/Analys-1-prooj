@@ -61,3 +61,18 @@ def analyze_website():
 if __name__ == '__main__':
     app.run(debug=True)
 
+# app.py
+# ... (the rest of your code)
+
+# This line is for Vercel to find the 'app' variable.
+from flask import Flask, request, jsonify, render_template
+
+app = Flask(__name__)
+
+# ... (the rest of your code)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+# The line to add
+application = app
